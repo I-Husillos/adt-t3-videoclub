@@ -7,10 +7,10 @@ import java.util.List;
 
 public interface PeliculaDAO {
     void insertarPelicula(Pelicula pelicula) throws SQLException;
-    Pelicula obtenerPelicula(int id);
-    List<Pelicula> obtenerTodasPeliculas();
-    void actualizarPelicula(Pelicula pelicula);
-    void eliminarPelicula(int id);
+    Pelicula obtenerPelicula(int id) throws SQLException;
+    List<Pelicula> obtenerTodasPeliculas() throws SQLException;
+    void actualizarPelicula(Pelicula pelicula) throws SQLException;
+    void eliminarPelicula(int id) throws SQLException;
 
 
 
